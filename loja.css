@@ -1,0 +1,122 @@
+/*Configuração Padrão de início*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Chamamos o body para limitar o tamanho da altura e tamanho da página*/
+body {
+    height: 90vh; /*Altura*/
+    width: 100vw;  /*Lagura*/
+}
+
+header { /*Chamamos nosso Header para estilização*/ 
+    background-color:#b08968; /*Cor de fundo*/
+    padding: 10vh; /*ajustamos o tamanho do preenchimento*/
+}
+
+.menu-header { /*Aqui é onde estão armazenados nossas listas do Header*/
+    display: flex; /*Usamos para jogar os itens lado a lado*/
+    justify-content: end; /*Aqui justificamos os itens desta lista para  o fim do Header*/
+    flex-wrap: wrap; /*Usado para informar que os itens podem quebrar em telas menores*/
+    
+}
+
+.menu-header > li > a { /*Aqui sabemos que dentro da nossa LI existe uma TAG de Link "a" */
+    color: #e6ccb2; /*Cor da letra*/
+    text-decoration: none; /*Desabilitando a decoração dos textos de Link*/
+    font-size: 100px; /*Tamanho da letra*/
+    margin-top: 20px; /* Margem superior*/
+    text-align: center; /*Alinhar o texto no centro*/
+
+}
+
+
+.menu { /*Aqui é onde estão armazenados nossas listas do Header*/
+    display: flex; /*Usamos para jogar os itens lado a lado*/
+    justify-content: end; /*Aqui justificamos os itens desta lista para  o fim do Header*/
+    flex-wrap: wrap; /*Usado para informar que os itens podem quebrar em telas menores*/
+}
+
+.menu > li > a {
+    color: white; /*Cor da letra*/
+    text-decoration: none; /*Desabilitando a decoração dos textos de Link*/
+    font-size: 12px; /*Tamanho da letra*/
+    text-align:left; /*Alinhar texto para esquerda*/
+   
+}
+
+.menu > li > a:hover { /*Efeito ao passar o cursor*/
+    
+    color: #ddb892; /*Habilitando uma cor ao passar o mouse*/
+    transition: 0.8s; /*Adicionamos aqui uma transição*/ 
+} 
+
+
+  .menu > li { /*Chamamos nossas Li diretamente para espaça-las*/
+    margin-left: 20px; /*Margem a esquerda para espaçamento*/
+}
+
+#sessao { /*Aqui chamamos nosso primeiro ID para estilização*/
+    padding: 30vh; /*Atribuimos um tamanho de preenchimento*/
+    background: linear-gradient(180deg, #ddb892 8.33%, #7f5539) 100%; /*Uma cor com Degradê*/
+    flex-wrap: wrap; /*Usado para informar que os itens podem quebrar em telas menores*/
+}
+
+
+ h1 { /*Alterando nosso Título*/
+    font-size: 45px; /*Tamanho da letra*/
+    color: #ede0d4; /*Cor da letra */
+    align-items:center; /* alinhados ao longo do eixo transversal*/
+    margin-top: -5rem; /*Distancia da Margem superior*/
+    margin-left: 20rem; /*Distancia da Margem a esquerda*/ 
+}
+
+#sessao > div {
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    padding: 10px;
+   
+}
+
+ p {
+    align-items: center;
+    font-size: 12px; /*Tamanho da letra*/
+    color: black; /*Cor da letra*/
+}
+
+#rodape {
+    background: linear-gradient(180deg, #ddb892 10%, #7f5539) 100%; /*Uma cor com Degradê*/
+    padding: 7vh; /*Preenchimento do Rodapé*/
+    align-items: center;
+}
+
+#rodape > a {
+    display: flex;  /*Jogando os itens lado a lado*/
+    justify-content:center; 
+    text-decoration: none; 
+    color: #ede0d4; /*Cor da letra*/
+    align-items: center;
+}
+
+#rodape > a:hover {
+    color: #ddb892; /*Habilitando uma cor ao passar o mouse*/
+    transition: 0.8s; /*Tempo de transição*/
+ }
+
+.simbolos {
+    text-align: center;
+    
+ }
+
+.simbolos > li > i {
+    justify-content:center;
+    padding: 5px;
+    font-size: 30px; /*Tamanho dos simbolos*/
+   
+}
+
+
